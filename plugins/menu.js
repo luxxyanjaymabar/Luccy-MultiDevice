@@ -664,7 +664,7 @@ const listMessage = {
     //------------------- 2BUTTON LOCATION
     conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), `${timeimg()}`, [
       ['sᴇᴡᴀ ʙᴏᴛ', `.sewa`],
-      ['sᴏsᴍᴇᴅ ᴏᴡɴ', `${_p}speedtest`]
+      ['sᴏsᴍᴇᴅ ᴏᴡɴ', `.sosialmedia`]
     ], m, {asLocation: true})
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
