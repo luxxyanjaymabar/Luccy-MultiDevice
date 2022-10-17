@@ -53,8 +53,8 @@ const defaultMenu = {
 %readmore
 `.trimStart(),
   header: '⃝▣──「 %category 」───⬣',
-  body: '│○ %cmd %isPremium %islimit',
-  footer: '▣───────────⬣\n',
+  body: '│>> %cmd %isPremium %islimit',
+  footer: '▣───────────⬣\\n',
   after: `%c4 %me`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args, command}) => {
@@ -663,7 +663,7 @@ const listMessage = {
       
     //------------------- 2BUTTON LOCATION
     conn.sendButton(m.chat, `${ucapan()}﹗`, text.trim(), `${timeimg()}`, [
-      ['sᴇᴡᴀ ʙᴏᴛ', `${_p}menu`],
+      ['sᴇᴡᴀ ʙᴏᴛ', `.sewa`],
       ['sᴏsᴍᴇᴅ ᴏᴡɴ', `${_p}speedtest`]
     ], m, {asLocation: true})
   } catch (e) {
